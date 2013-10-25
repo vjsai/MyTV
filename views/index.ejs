@@ -1,0 +1,213 @@
+
+<html>
+<head>
+    <title>    <%= title %>    </title>
+    <meta author = "Vijay Sai">
+    <meta description = "Find all movies via torrent and watch them">
+    <meta name="description" content="MyTV web app allows you to watch movies via treaming torrents!!">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="/stylesheets/index.css" type="text/css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<ul>
+    <% for(var i=0; i<movieData.length; i++) {%>
+    <li><%= movieData[i].CoverImage %></li>
+    <% } %>
+</ul>
+
+
+<div id="other-navigations">
+<div id="mobile-navigation">
+    <nav class="nav">
+        <div class="left">
+            <ul>
+                <li><a id="mobile-menu" href="#" title="Menu"><img src="/images/menu.png" width="16px" height="16px"></a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="search-wrapper">
+                <input type="text" class="q" placeholder="Search Movies"><button class="submit">Search</button>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </nav>
+</div>
+<div id="navigation">
+    <nav class="nav">
+        <div class="left">
+            <ul>
+                <li><a href="#" class="logo" title="Home">    <%= title %>  </a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="search-wrapper">
+                <input type="text" class="q" placeholder="Search Movies"><button class="submit">Search</button>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </nav>
+</div>
+<div id="content-container">
+    <div class="header-title"><h1>Featured Movies</h1></div>
+    <div class="cards-container">
+        <a href="#" class="card">
+            <img src="/cards/i1.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">Iron Man 3</h1>
+                <p class="card-story">When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a><a href="#" class="card">
+            <img src="/cards/i2.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">300 - Rise of an Empire</h1>
+                <p class="card-story">The Greek general Themistocles battles an invading army of Persians under the mortal-turned-god, Xerxes.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a><a href="#" class="card">
+            <img src="/cards/i3.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">Kick Ass 2</h1>
+                <p class="card-story">The costumed high-school hero Kick-Ass joins with a group of normal citizens who have been inspired to fight crime in costume. Meanwhile, the Red Mist plots an act of revenge that will affect everyone Kick-Ass knows.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a><a href="#" class="card">
+            <img src="/cards/i4.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">Despicable Me 2</h1>
+                <p class="card-story">Gru is recruited by the Anti-Villain League to help deal with a powerful new super criminal.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a><a href="#" class="card">
+            <img src="/cards/i5.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">Monsters University</h1>
+                <p class="card-story">A look at the relationship between Mike and Sulley during their days at Monsters University -- when they weren't necessarily the best of friends.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a><a href="#" class="card">
+            <img src="/cards/i6.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">JOBS Movie</h1>
+                <p class="card-story">The story of Steve Jobs' ascension from college dropout into one of the most revered creative entrepreneurs of the 20th century.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="header-title"><h1>Popular Movies</h1></div>
+    <div class="cards-container">
+        <a href="#" class="card">
+            <img src="/cards/i7.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">Wolverine 2</h1>
+                <p class="card-story">When Wolverine is summoned to Japan by an old acquaintance, he is embroiled in a conflict that forces him to confront his own demons.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a><a href="#" class="card">
+            <img src="/cards/i8.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">Grown Ups 2</h1>
+                <p class="card-story">After moving his family back to his hometown to be with his friends and their kids, Lenny finds out that between old bullies, new bullies, schizo bus drivers, drunk cops on skis, and 400 costumed party crashers sometimes crazy follows you.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a><a href="#" class="card">
+            <img src="/cards/i9.jpg">
+            <div class="card-desc">
+                <h1 class="card-title">Inception</h1>
+                <p class="card-story">A skilled extractor is offered a chance to regain his old life as payment for a task considered to be impossible.</p><span class="flat-button">More Details</span>
+                <div class="card-controls">
+                    <div class="rate card-control" title="Rate"><img src="/images/rate.png"></div>
+                    <div class="review card-control" title="Review"><img src="/images/review.png"></div>
+                    <div class="watchlist card-control" title="Add to Watchlist"><img src="/images/trailer.png"></div>
+                    <div class="trailer card-control" title="Watch Trailer"><img src="/images/movie.png"></div>
+                    <div class="share card-control" title="Share with Friends"><img src="/images/home.png"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<div id="footer">
+    <div class="left">Copyright &copy; MyTV. All Rights Reserved.</div>
+    <div style="clear: both;"></div>
+</div>
+</div>
+<div id="side-navigation" class="">
+    <nav class="nav">
+        <ul>
+            <li><a href="#" class="logo" title="Home"><img src="/images/home.png" width="16px" height="16px"><div class="link-text">Home</div></a></li>
+
+        </ul>
+    </nav>
+</div>
+</body>
+<script src="/thirdparty/jquery-1.7.min.js"></script>
+<script type="text/javascript">
+    $('#mobile-menu').click(function(){
+        if($('#side-navigation').hasClass('displayed'))
+        {
+            $('#side-navigation').removeClass('displayed');
+            $('#other-navigations').css('margin-left', "0px");
+        }
+        else
+        {
+            $('#side-navigation').addClass('displayed');
+            $('#other-navigations').css('margin-left', "56px");
+        }
+    });
+    $('#side-navigation nav li a').click(function(){
+        $('#side-navigation').removeClass('displayed');
+        $('#other-navigations').css('margin-left', "0px");
+    });
+</script>
+</html>
